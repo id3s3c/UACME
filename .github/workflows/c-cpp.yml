@@ -1,25 +1,11 @@
-name: C/C++ CI
+name: Building project
 
 on:
   push:
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
-name: Build UACME
 
-on:
-  push:
-    branches: [ main, master ]
-  pull_request:
-    branches: [ main, master ]
-
-name: Build UACME
-
-on:
-  push:
-    branches: [ main, master ]
-  pull_request:
-    branches: [ main, master ]
 
 jobs:
   build:
