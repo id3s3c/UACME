@@ -21,11 +21,7 @@ jobs:
 
       - name: Build solution (x64 Release)
         run: |
-          msbuild Source\UACME.sln ^
-            /p:Configuration=Release ^
-            /p:Platform=x64 ^
-            /p:PlatformToolset=v143 ^
-            /p:WindowsTargetPlatformVersion=10.0.19041.0
+          msbuild Source\uacme.sln /p:Configuration=Release /p:Platform=x64 /p:PlatformToolset=v143 /p:WindowsTargetPlatformVersion=10.0.19041.0
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
